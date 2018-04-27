@@ -15,5 +15,6 @@ stefano.create_block({
   amount: 1000
 });
 
-
-console.log(JSON.stringify(stefano.chain, null, 4))
+stefano.valid();
+stefano.chain[3].hash = 32423;
+stefano.valid();
